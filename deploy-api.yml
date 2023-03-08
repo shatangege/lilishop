@@ -453,7 +453,7 @@ spec:
         lilishop.service: buyer-api
     spec:
       containers:
-        - image: 192.168.0.108:31320/buyer-api:4.2.4.1
+        - image: registry.cloud.com:5000/buyer-api:4.2.4.1
           name: buyer-api
           env:
             - name: TZ
@@ -498,7 +498,7 @@ spec:
         lilishop.service: common-api
     spec:
       containers:
-        - image: 192.168.0.108:31320/common-api:4.2.4.1
+        - image: registry.cloud.com:5000/common-api:4.2.4.1
           name: common-api
           env:
             - name: TZ
@@ -543,7 +543,7 @@ spec:
         lilishop.service: seller-api
     spec:
       containers:
-        - image: 192.168.0.108:31320/seller-api:4.2.4.1
+        - image: registry.cloud.com:5000/seller-api:4.2.4.1
           name: seller-api
           env:
             - name: TZ
@@ -588,7 +588,7 @@ spec:
         lilishop.service: manager-api
     spec:
       containers:
-        - image: 192.168.0.108:31320/manager-api:4.2.4.1
+        - image: registry.cloud.com:5000/manager-api:4.2.4.1
           name: manager-api
           env:
             - name: TZ
@@ -633,7 +633,7 @@ spec:
         lilishop.service: consumer
     spec:
       containers:
-        - image: 192.168.0.108:31320/consumer:4.2.4.1
+        - image: registry.cloud.com:5000/consumer:4.2.4.1
           name: consumer
           env:
             - name: TZ
