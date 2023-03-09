@@ -31,12 +31,12 @@ spring:
   boot:
     admin:
       client:
-        url: http://127.0.0.1:8000
+        url: http://admin.k8s.cloud.com:8000
   cache:
     type: redis
   # Redis
   redis:
-    host: 127.0.0.1
+    host: redis.k8s.cloud.com
     port: 6379
     password: lilishop
     lettuce:
@@ -67,7 +67,7 @@ spring:
       default-datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://127.0.0.1:3306/lilishop?useUnicode=true&characterEncoding=utf-8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+        url: jdbc:mysql://mysql.k8s.cloud.com:3306/lilishop?useUnicode=true&characterEncoding=utf-8&useSSL=false&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
         username: root
         password: lilishop
         maxActive: 20
@@ -238,7 +238,7 @@ lili:
   data:
     elasticsearch:
       cluster-name: elasticsearch
-      cluster-nodes: 127.0.0.1:9200
+      cluster-nodes: es.k8s.cloud.com:9200
       index:
         number-of-replicas: 0
         number-of-shards: 3
@@ -248,7 +248,7 @@ lili:
     #        username: elastic
     #        password: LiLiShopES
     logstash:
-      server: 127.0.0.1:4560
+      server: logstash.k8s.cloud.com:4560
     rocketmq:
       promotion-topic: lili_promotion_topic
       promotion-group: lili_promotion_group
@@ -271,7 +271,7 @@ lili:
       after-sale-topic: lili_after_sale_topic
       after-sale-group: lili_after_sale_group
 rocketmq:
-  name-server: 127.0.0.1:9876
+  name-server: rocketmq.k8s.cloud.com:9876
   producer:
     group: lili_group
     send-message-timeout: 30000
@@ -279,7 +279,7 @@ rocketmq:
 xxl:
   job:
     admin:
-      addresses: http://127.0.0.1:9001/xxl-job-admin
+      addresses: http://xxljob.k8s.cloud.com:9001/xxl-job-admin
     executor:
       appname: xxl-job-executor-lilishop
       address:
