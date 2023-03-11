@@ -28,12 +28,12 @@ spring:
   boot:
     admin:
       client:
-        url: http://admin.k8s.cloud.com:8000
+        url: http://admin.default.svc.rancher-cluster:8000
   cache:
     type: redis
   # Redis
   redis:
-    host: redis.k8s.cloud.com
+    host: redis.default.svc.rancher-cluster
     port: 6379
     password: lilishop
     lettuce:
@@ -64,7 +64,7 @@ spring:
       default-datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://mysql.k8s.cloud.com:3306/lilishop?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+        url: jdbc:mysql://mysql.default.svc.rancher-cluster:3306/lilishop?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
         username: root
         password: lilishop
         maxActive: 20
@@ -226,7 +226,7 @@ lili:
   data:
     elasticsearch:
       cluster-name: elasticsearch
-      cluster-nodes: es.k8s.cloud.com:9200
+      cluster-nodes: es.default.svc.rancher-cluster:9200
       index:
         number-of-replicas: 0
         number-of-shards: 3
@@ -236,7 +236,7 @@ lili:
     #        username: elastic
     #        password: LiLiShopES
     logstash:
-      server: logstash.k8s.cloud.com:4560
+      server: logstash.default.svc.rancher-cluster:4560
     rocketmq:
       promotion-topic: lili_promotion_topic
       promotion-group: lili_promotion_group
@@ -259,7 +259,7 @@ lili:
       after-sale-topic: lili_after_sale_topic
       after-sale-group: lili_after_sale_group
 rocketmq:
-  name-server: rocketmq.k8s.cloud.com:9876
+  name-server: rocketmq.default.svc.rancher-cluster:9876
   producer:
     group: lili_group
     send-message-timeout: 30000
@@ -267,7 +267,7 @@ rocketmq:
 xxl:
   job:
     admin:
-      addresses: http://xxljob.k8s.cloud.com:9001/xxl-job-admin
+      addresses: http://xxljob.default.svc.rancher-cluster:9001/xxl-job-admin
     executor:
       appname: xxl-job-executor-lilishop
       address:

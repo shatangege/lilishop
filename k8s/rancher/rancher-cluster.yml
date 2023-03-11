@@ -1,0 +1,35 @@
+nodes:
+  - address: 47.102.115.242
+    internal_address: 172.16.8.5
+    user: rancher
+    role: [controlplane,worker,etcd]
+  - address: 47.102.126.227
+    internal_address: 172.16.8.6
+    user: rancher
+    role: [controlplane,worker,etcd]
+  - address: 47.101.55.79
+    internal_address: 172.16.8.7
+    user: rancher
+    role: [controlplane,worker,etcd]
+ignore_docker_version: yes
+kubernetes_version: v1.18.20-rancher1-3
+
+services:
+  etcd:
+    snapshot: true
+    creation: 6h
+    retention: 24h
+
+  kube-api:
+    service_node_port_range: 30000-40000
+  kubelet:
+    extra_args:
+      allowed-unsafe-sysctls: "net.core.*"
+      node-status-update-frequency: 20s
+      eviction-soft: "memory.available<1Gi,nodefs.available<5%,nodefs.inodesFree<5%,imagefs.available<10%"
+      eviction-soft-grace-period: "memory.available=1h,nodefs.available=1h,nodefs.inodesFree=1h,imagefs.available=1h"
+      eviction-hard: "memory.available<512Mi,nodefs.available<3%,nodefs.inodesFree<3%,imagefs.available<5%"
+  kube-controller:
+    extra_args:
+      node-monitor-grace-period: 2m
+      pod-eviction-timeout: 1m

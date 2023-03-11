@@ -240,7 +240,7 @@ lili:
     #        username: elastic
     #        password: LiLiShopES
     logstash:
-      server: logstash.k8s.cloud.com:4560
+      server: logstash.default.svc.rancher-cluster:4560
     rocketmq:
       promotion-topic: lili_promotion_topic
       promotion-group: lili_promotion_group
