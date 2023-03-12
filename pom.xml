@@ -73,8 +73,6 @@
         <module>admin</module>
         <module>im-api</module>
         <module>k8s</module>
-        <module>iaas</module>
-        <module>packages</module>
     </modules>
 
     <build>
