@@ -12,7 +12,7 @@ metadata:
   labels:
     app.kubernetes.io/name: buyer-api-service
     app.kubernetes.io/instance: api
-    app.kubernetes.io/version: "4.2.4.1"
+    app.kubernetes.io/version: "4.2.5.1"
     app.kubernetes.io/component: api
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
@@ -35,7 +35,7 @@ metadata:
   labels:
     app.kubernetes.io/name: common-api-service
     app.kubernetes.io/instance: api
-    app.kubernetes.io/version: "4.2.4.1"
+    app.kubernetes.io/version: "4.2.5.1"
     app.kubernetes.io/component: api
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
@@ -58,7 +58,7 @@ metadata:
   labels:
     app.kubernetes.io/name: seller-api-service
     app.kubernetes.io/instance: api
-    app.kubernetes.io/version: "4.2.4.1"
+    app.kubernetes.io/version: "4.2.5.1"
     app.kubernetes.io/component: api
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
@@ -81,7 +81,7 @@ metadata:
   labels:
     app.kubernetes.io/name: manager-api-service
     app.kubernetes.io/instance: api
-    app.kubernetes.io/version: "4.2.4.1"
+    app.kubernetes.io/version: "4.2.5.1"
     app.kubernetes.io/component: api
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
@@ -438,7 +438,7 @@ metadata:
   labels:
     app.kubernetes.io/name: buyer-api-service
     app.kubernetes.io/instance: buyer-api
-    app.kubernetes.io/version: "4.2.4.1"
+    app.kubernetes.io/version: "4.2.5.1"
     app.kubernetes.io/component: api
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
@@ -453,7 +453,7 @@ spec:
         lilishop.service: buyer-api
     spec:
       containers:
-        - image: registry.cloud.com:5000/lili-images/buyer-api:4.2.4.1
+        - image: registry.cloud.com:5000/lili-images/buyer-api:4.2.5.1
           name: buyer-api
           env:
             - name: TZ
@@ -483,7 +483,7 @@ metadata:
   labels:
     app.kubernetes.io/name: common-api-service
     app.kubernetes.io/instance: common-api
-    app.kubernetes.io/version: "4.2.4.1"
+    app.kubernetes.io/version: "4.2.5.1"
     app.kubernetes.io/component: api
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
@@ -498,7 +498,7 @@ spec:
         lilishop.service: common-api
     spec:
       containers:
-        - image: registry.cloud.com:5000/lili-images/common-api:4.2.4.1
+        - image: registry.cloud.com:5000/lili-images/common-api:4.2.5.1
           name: common-api
           env:
             - name: TZ
@@ -528,7 +528,7 @@ metadata:
   labels:
     app.kubernetes.io/name: seller-api-service
     app.kubernetes.io/instance: seller-api
-    app.kubernetes.io/version: "4.2.4.1"
+    app.kubernetes.io/version: "4.2.5.1"
     app.kubernetes.io/component: api
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
@@ -543,7 +543,7 @@ spec:
         lilishop.service: seller-api
     spec:
       containers:
-        - image: registry.cloud.com:5000/lili-images/seller-api:4.2.4.1
+        - image: registry.cloud.com:5000/lili-images/seller-api:4.2.5.1
           name: seller-api
           env:
             - name: TZ
@@ -573,7 +573,7 @@ metadata:
   labels:
     app.kubernetes.io/name: manager-api-service
     app.kubernetes.io/instance: manager-api
-    app.kubernetes.io/version: "4.2.4.1"
+    app.kubernetes.io/version: "4.2.5.1"
     app.kubernetes.io/component: api
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
@@ -588,7 +588,7 @@ spec:
         lilishop.service: manager-api
     spec:
       containers:
-        - image: registry.cloud.com:5000/lili-images/manager-api:4.2.4.1
+        - image: registry.cloud.com:5000/lili-images/manager-api:4.2.5.1
           name: manager-api
           env:
             - name: TZ
@@ -618,7 +618,7 @@ metadata:
   labels:
     app.kubernetes.io/name: consumer-service
     app.kubernetes.io/instance: buyer-api
-    app.kubernetes.io/version: "4.2.4.1"
+    app.kubernetes.io/version: "4.2.5.1"
     app.kubernetes.io/component: api
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
@@ -633,7 +633,7 @@ spec:
         lilishop.service: consumer
     spec:
       containers:
-        - image: registry.cloud.com:5000/lili-images/consumer:4.2.4.1
+        - image: registry.cloud.com:5000/lili-images/consumer:4.2.5.1
           name: consumer
           env:
             - name: TZ
