@@ -422,7 +422,7 @@ data:
     xxl:
       job:
         admin:
-          addresses: http://xxl-job-service.default:8080/xxl-job-admin
+          addresses: http://xxl-job.default:8080/xxl-job-admin
         executor:
           appname: xxl-job-executor-lilishop
           address:
