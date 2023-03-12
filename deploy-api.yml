@@ -135,14 +135,14 @@ data:
       boot:
         admin:
           client:
-            url: http://192.168.0.116:8000
+            url: http://master0.cloud.com:8000
       cache:
         type: redis
       # Redis
       redis:
-        host: redis-service.lilishop-middleware
+        host: redis-5-0-2.default
         port: 6379
-        password: lilishop
+        password:
         lettuce:
           pool:
             # 连接池最大连接数（使用负值表示没有限制） 默认 8
@@ -171,7 +171,7 @@ data:
           default-datasource:
             type: com.alibaba.druid.pool.DruidDataSource
             driverClassName: com.mysql.cj.jdbc.Driver
-            url: jdbc:mysql://mysql.lilishop-middleware:3306/lilishop?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+            url: jdbc:mysql://mysql-8-0-13.default.svc.rancher-cluster:3306/lilishop?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
             username: root
             password: lilishop
             maxActive: 50
@@ -351,16 +351,16 @@ data:
         sk: zhNKVrJK6UPOhqIjn8AQvG37b9sz6
       #域名
       domain:
-        pc: http://192.168.0.116:8888
-        wap: http://192.168.0.116:8888
-        seller: http://192.168.0.116:8888
-        admin: http://192.168.0.116:8888
+        pc: http://master.cloud.com:8888
+        wap: http://master.cloud.com:8888
+        seller: http://master.cloud.com:8888
+        admin: http://master.cloud.com:8888
       #api地址
       api:
-        buyer: http://192.168.0.116:8888
-        base: http://192.168.0.116:8888
-        manager: http://192.168.0.116:8888
-        seller: http://192.168.0.116:8888
+        buyer: http://master.cloud.com:8888
+        base: http://master.cloud.com:8888
+        manager: http://master.cloud.com:8888
+        seller: http://master.cloud.com:8888
 
       # jwt 细节设定
       jwt-setting:
@@ -379,7 +379,7 @@ data:
       data:
         elasticsearch:
           cluster-name: elasticsearch
-          cluster-nodes: elasticsearch.lilishop-middleware:9200
+          cluster-nodes: elasticsearch.default:9200
           index:
             number-of-replicas: 0
             number-of-shards: 3
@@ -390,7 +390,7 @@ data:
         #        password: LiLiShopES
 
         logstash:
-          server: logstash-service.lilishop-middleware:4560
+          server: logstash-service.defualt:4560
         rocketmq:
           promotion-topic: lili_promotion_topic
           promotion-group: lili_promotion_group
@@ -411,7 +411,7 @@ data:
           after-sale-topic: lili_after_sale_topic
           after-sale-group: lili_after_sale_group
     rocketmq:
-      name-server: rocketmq.lilishop-middleware:9876
+      name-server: rocketmq.default:9876
       isVIPChannel: false
       producer:
         group: lili_group
@@ -420,7 +420,7 @@ data:
     xxl:
       job:
         admin:
-          addresses: http://xxl-job-service.lilishop-middleware:9001/xxl-job-admin
+          addresses: http://xxl-job-service.default:9001/xxl-job-admin
         executor:
           appname: xxl-job-executor-lilishop
           address:

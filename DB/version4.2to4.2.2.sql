@@ -1,10 +1,10 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : 192.168.0.116
+ Source Server         : master.cloud.com
  Source Server Type    : MySQL
  Source Server Version : 80023
- Source Host           : 192.168.0.116:3306
+ Source Host           : master.cloud.com:3306
  Source Schema         : lilishop
 
  Target Server Type    : MySQL
