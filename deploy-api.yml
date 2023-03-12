@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: lilishop-service
+  name: default
 
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: buyer-api-service
-  namespace: lilishop-service
+  namespace: default
   labels:
     app.kubernetes.io/name: buyer-api-service
     app.kubernetes.io/instance: api
@@ -31,7 +31,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: common-api-service
-  namespace: lilishop-service
+  namespace: default
   labels:
     app.kubernetes.io/name: common-api-service
     app.kubernetes.io/instance: api
@@ -54,7 +54,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: seller-api-service
-  namespace: lilishop-service
+  namespace: default
   labels:
     app.kubernetes.io/name: seller-api-service
     app.kubernetes.io/instance: api
@@ -77,7 +77,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: manager-api-service
-  namespace: lilishop-service
+  namespace: default
   labels:
     app.kubernetes.io/name: manager-api-service
     app.kubernetes.io/instance: api
@@ -100,7 +100,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: api-config
-  namespace: lilishop-service
+  namespace: default
   labels:
     app.kubernetes.io/name: mysql-db-config
     app.kubernetes.io/instance: mysql-single
@@ -434,7 +434,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: buyer-api
-  namespace: lilishop-service
+  namespace: default
   labels:
     app.kubernetes.io/name: buyer-api-service
     app.kubernetes.io/instance: buyer-api
@@ -479,7 +479,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: common-api
-  namespace: lilishop-service
+  namespace: default
   labels:
     app.kubernetes.io/name: common-api-service
     app.kubernetes.io/instance: common-api
@@ -524,7 +524,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: seller-api
-  namespace: lilishop-service
+  namespace: default
   labels:
     app.kubernetes.io/name: seller-api-service
     app.kubernetes.io/instance: seller-api
@@ -569,7 +569,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: manager-api
-  namespace: lilishop-service
+  namespace: default
   labels:
     app.kubernetes.io/name: manager-api-service
     app.kubernetes.io/instance: manager-api
@@ -614,7 +614,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: consumer
-  namespace: lilishop-service
+  namespace: default
   labels:
     app.kubernetes.io/name: consumer-service
     app.kubernetes.io/instance: buyer-api
