@@ -412,7 +412,7 @@ data:
           after-sale-group: lili_after_sale_group
     rocketmq:
 
-      name-server: rocketmq.default:9876
+      name-server: rocketmq.default:5672
       isVIPChannel: false
       producer:
         group: lili_group
@@ -422,7 +422,7 @@ data:
     xxl:
       job:
         admin:
-          addresses: http://xxl-job-service.default:9001/xxl-job-admin
+          addresses: http://xxl-job-service.default:8080/xxl-job-admin
         executor:
           appname: xxl-job-executor-lilishop
           address:
