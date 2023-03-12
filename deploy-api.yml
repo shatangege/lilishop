@@ -411,7 +411,7 @@ data:
           after-sale-topic: lili_after_sale_topic
           after-sale-group: lili_after_sale_group
     rocketmq:
-      name-server: rocketmq.default.svc.rancher-cluster:5672
+      name-server: rocketmq.default.svc.rancher-cluster:15672
       isVIPChannel: false
       producer:
         group: lili_group
