@@ -173,7 +173,7 @@ data:
             driverClassName: com.mysql.cj.jdbc.Driver
             url: jdbc:mysql://mysql-8-0-13.default.svc.rancher-cluster:3306/lilishop?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
             username: root
-            password: lilishop
+            password: 123456
             maxActive: 50
             initialSize: 20
             maxWait: 60000
@@ -411,12 +411,14 @@ data:
           after-sale-topic: lili_after_sale_topic
           after-sale-group: lili_after_sale_group
     rocketmq:
+
       name-server: rocketmq.default:9876
       isVIPChannel: false
       producer:
         group: lili_group
         send-message-timeout: 30000
-
+        access-key: admin
+        secret-key: 123456
     xxl:
       job:
         admin:
