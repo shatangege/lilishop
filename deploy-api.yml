@@ -411,13 +411,11 @@ data:
           after-sale-topic: lili_after_sale_topic
           after-sale-group: lili_after_sale_group
     rocketmq:
-      name-server: rocketmq.default.svc.rancher-cluster:15672
+      name-server: mq-ns.default.svc.rancher-cluster:9876
       isVIPChannel: false
       producer:
         group: lili_group
         send-message-timeout: 30000
-        access-key: admin
-        secret-key: 123456
     xxl:
       job:
         admin:
