@@ -351,16 +351,16 @@ data:
         sk: zhNKVrJK6UPOhqIjn8AQvG37b9sz6
       #域名
       domain:
-        pc: http://master.cloud.com:8888
-        wap: http://master.cloud.com:8888
-        seller: http://master.cloud.com:8888
-        admin: http://master.cloud.com:8888
+        pc: https://pc.cloud.com
+        wap: https://wap.cloud.com
+        seller: https://seller.cloud.com
+        admin: https://admin.cloud.com
       #api地址
       api:
-        buyer: http://master.cloud.com:8888
-        base: http://master.cloud.com:8888
-        manager: http://master.cloud.com:8888
-        seller: http://master.cloud.com:8888
+        buyer: https://buyer-api.cloud.com
+        base: https://base-api.cloud.com
+        manager: https://manager-api.cloud.com
+        seller: https://seller-api.cloud.com
 
       # jwt 细节设定
       jwt-setting:
