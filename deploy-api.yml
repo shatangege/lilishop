@@ -17,12 +17,16 @@ metadata:
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
-    - name: "8888"
-      nodePort: 30888
-      port: 8888
-      targetPort: buyer8888
+    - name: "http"
+      port: 80
+      targetPort: 80
+      protocol: TCP
+    - name: "https"
+      port: 443
+      targetPort: 443
+      protocol: TCP
   selector:
     lilishop.service: buyer-api
 
@@ -40,12 +44,16 @@ metadata:
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
-    - name: "8890"
-      nodePort: 30890
-      port: 8890
-      targetPort: common8890
+    - name: "http"
+      port: 80
+      targetPort: 80
+      protocol: TCP
+    - name: "https"
+      port: 443
+      targetPort: 443
+      protocol: TCP
   selector:
     lilishop.service: common-api
 
@@ -63,12 +71,16 @@ metadata:
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
-    - name: "8889"
-      nodePort: 30889
-      port: 8889
-      targetPort: seller8889
+    - name: "http"
+      port: 80
+      targetPort: 80
+      protocol: TCP
+    - name: "https"
+      port: 443
+      targetPort: 443
+      protocol: TCP
   selector:
     lilishop.service: seller-api
 
@@ -86,12 +98,16 @@ metadata:
     app.kubernetes.io/part-of: lilishop
     tier: "api-service"
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
-    - name: "8887"
-      nodePort: 30887
-      port: 8887
-      targetPort: manager8887
+    - name: "http"
+      port: 80
+      targetPort: 80
+      protocol: TCP
+    - name: "https"
+      port: 443
+      targetPort: 443
+      protocol: TCP
   selector:
     lilishop.service: manager-api
 
@@ -460,8 +476,8 @@ spec:
             - name: JAVA_OPTS
               value: -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m -Xms128m -Xmx256m -Xmn128m -Xss256k -XX:SurvivorRatio=8 -XX:+UseConcMarkSweepGC
           ports:
-            - name: buyer8888
-              containerPort: 8888
+            - name: buyer80
+              containerPort: 80
           volumeMounts:
             - mountPath: /application.yml
               name: application-yml
@@ -505,8 +521,8 @@ spec:
             - name: JAVA_OPTS
               value: -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m -Xms128m -Xmx256m -Xmn128m -Xss256k -XX:SurvivorRatio=8 -XX:+UseConcMarkSweepGC
           ports:
-            - name: common8890
-              containerPort: 8890
+            - name: common80
+              containerPort: 80
           volumeMounts:
             - mountPath: /application.yml
               name: application-yml
@@ -550,8 +566,8 @@ spec:
             - name: JAVA_OPTS
               value: -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m -Xms128m -Xmx256m -Xmn128m -Xss256k -XX:SurvivorRatio=8 -XX:+UseConcMarkSweepGC
           ports:
-            - name: seller8889
-              containerPort: 8889
+            - name: seller80
+              containerPort: 80
           volumeMounts:
             - mountPath: /application.yml
               name: application-yml
@@ -595,8 +611,8 @@ spec:
             - name: JAVA_OPTS
               value: -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m -Xms128m -Xmx256m -Xmn128m -Xss256k -XX:SurvivorRatio=8 -XX:+UseConcMarkSweepGC
           ports:
-            - name: manager8887
-              containerPort: 8887
+            - name: manager80
+              containerPort: 80
           volumeMounts:
             - mountPath: /application.yml
               name: application-yml
