@@ -86,7 +86,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>${spotify}</version>
                 <configuration>
-                    <imageName>${docker-registry}/${project.artifactId}:${revision}.${images-version}</imageName>
+                    <imageName>${docker-registry}/${project.artifactId}:latest</imageName>
                     <baseImage>openjdk</baseImage>
                     <cmd>["java", "-version"]</cmd>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
