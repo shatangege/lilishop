@@ -13,14 +13,14 @@
 
 ##### 体验 公众号/小程序/APP 体验，扫描二维码
 
-![image-20210511171611793](https://pickmall.cn/assets/imgs/h5-qrcode.png)
+![image-20210511171611793](https://cloud.com/assets/imgs/h5-qrcode.png)
 
 [![star](https://gitee.com/beijing_hongye_huicheng/lilishop/badge/star.svg?theme=dark)](https://gitee.com/beijing_hongye_huicheng/lilishop/stargazers)
 &nbsp;&nbsp;![github](https://img.shields.io/github/stars/hongyehuicheng/lilishop.svg?style=social&logo=#181717)
 
 
 ### 商城介绍
-**官网**：https://pickmall.cn
+**官网**：https://cloud.com
 
 Lilishop商城系统支持商家入驻，后端基于SpringBoot 研发，前端使用 Vue、uniapp开发， **系统全端全部代码开源**
 
@@ -32,7 +32,7 @@ https://gitee.com/beijing_hongye_huicheng/lilishop-simplify
 
 ### 开发/使用/常见问题 帮助文档
 
-https://docs.pickmall.cn
+https://docs.cloud.com
 
 ### 项目地址
 
@@ -47,19 +47,19 @@ buyer：买家PC端，seller：商家端，manager：后台管理端
 ### 演示地址
 PS：手机验证码为 ‘111111’
 
-**平台管理端**：https://admin-b2b2c.pickmall.cn 账号：admin/123456
+**平台管理端**：https://admin-b2b2c.cloud.com 账号：admin/123456
 
-**店铺管理端**：https://store-b2b2c.pickmall.cn 账号：13011111111/111111
+**店铺管理端**：https://store-b2b2c.cloud.com 账号：13011111111/111111
 
-**商城PC页面**：https://pc-b2b2c.pickmall.cn
+**商城PC页面**：https://pc-b2b2c.cloud.com
 
 **商城 小程序/公众号/APP**：扫描二维码
 
-![image-20210511171611793](https://pickmall.cn/assets/imgs/h5-qrcode.png)
+![image-20210511171611793](https://cloud.com/assets/imgs/h5-qrcode.png)
 
 ### 快速本地部署
 
-[点击跳转](https://docs.pickmall.cn/deploy/%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87.html)
+[点击跳转](https://docs.cloud.com/deploy/%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87.html)
 
 **商城数据库**
 使用docker-compose部署数据库，自动初始化数据库，不需要手动下载等操作
@@ -74,24 +74,24 @@ PS：手机验证码为 ‘111111’
 
 #### 平台管理端功能
 
-![平台管理端功能](https://pickmall.cn/assets/imgs/other/managerList1.jpg)
+![平台管理端功能](https://cloud.com/assets/imgs/other/managerList1.jpg)
 
 
 
 #### 卖家功能
 
-![商家端功能](https://pickmall.cn/assets/imgs/other/storeList.jpg)
+![商家端功能](https://cloud.com/assets/imgs/other/storeList.jpg)
 
 
 ### 商城前端功能展示
 
 #### 商城移动端
 
-<img src="https://pickmall.cn/assets/imgs/other/app.gif" alt="移动端功能展示" style="zoom:50%;" />
+<img src="https://cloud.com/assets/imgs/other/app.gif" alt="移动端功能展示" style="zoom:50%;" />
 
 #### 平台管理端
 
-![管理端功能展示](https://pickmall.cn/assets/imgs/other/manager.gif)
+![管理端功能展示](https://cloud.com/assets/imgs/other/manager.gif)
 
 
 ### 技术选型
