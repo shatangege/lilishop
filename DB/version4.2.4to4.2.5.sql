@@ -25,7 +25,7 @@ ALTER TABLE li_store ADD page_show bit(1) DEFAULT NULL COMMENT '默认页面是�
  Source Server         : lilishop
  Source Server Type    : MySQL
  Source Server Version : 80025
- Source Host           : 192.168.0.116:3306
+ Source Host           : 192.168.0.200:3306
  Source Schema         : zhimai1
 
  Target Server Type    : MySQL
@@ -70,7 +70,7 @@ SET FOREIGN_KEY_CHECKS = 1;
  Source Server         : lilishop
  Source Server Type    : MySQL
  Source Server Version : 80025
- Source Host           : 192.168.0.116:3306
+ Source Host           : 192.168.0.200:3306
  Source Schema         : zhimai1
 
  Target Server Type    : MySQL
@@ -104,7 +104,7 @@ SET FOREIGN_KEY_CHECKS = 1;
  Source Server         : lilishop
  Source Server Type    : MySQL
  Source Server Version : 80025
- Source Host           : 192.168.0.116:3306
+ Source Host           : 192.168.0.200:3306
  Source Schema         : zhimai1
 
  Target Server Type    : MySQL
@@ -144,7 +144,7 @@ SET FOREIGN_KEY_CHECKS = 1;
  Source Server         : lilishop
  Source Server Type    : MySQL
  Source Server Version : 80025
- Source Host           : 192.168.0.116:3306
+ Source Host           : 192.168.0.200:3306
  Source Schema         : zhimai1
 
  Target Server Type    : MySQL
@@ -182,7 +182,7 @@ SET FOREIGN_KEY_CHECKS = 1;
  Source Server         : lilishop
  Source Server Type    : MySQL
  Source Server Version : 80025
- Source Host           : 192.168.0.116:3306
+ Source Host           : 192.168.0.200:3306
  Source Schema         : zhimai1
 
  Target Server Type    : MySQL
@@ -223,7 +223,7 @@ SET FOREIGN_KEY_CHECKS = 1;
  Source Server         : lilishop
  Source Server Type    : MySQL
  Source Server Version : 80025
- Source Host           : 192.168.0.116:3306
+ Source Host           : 192.168.0.200:3306
  Source Schema         : zhimai1
 
  Target Server Type    : MySQL
@@ -263,7 +263,7 @@ SET FOREIGN_KEY_CHECKS = 1;
  Source Server         : lilishop
  Source Server Type    : MySQL
  Source Server Version : 80025
- Source Host           : 192.168.0.116:3306
+ Source Host           : 192.168.0.200:3306
  Source Schema         : zhimai1
 
  Target Server Type    : MySQL
@@ -416,7 +416,7 @@ SET FOREIGN_KEY_CHECKS = 1;
  Source Server         : lilishop
  Source Server Type    : MySQL
  Source Server Version : 80025
- Source Host           : 192.168.0.116:3306
+ Source Host           : 192.168.0.200:3306
  Source Schema         : zhimai1
 
  Target Server Type    : MySQL

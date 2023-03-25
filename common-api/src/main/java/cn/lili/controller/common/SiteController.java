@@ -10,6 +10,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * 站点基础配置获取
  *
@@ -31,5 +34,22 @@ public class SiteController {
     @GetMapping
     public ResultMessage<Object> baseSetting() {
         return ResultUtil.data(settingService.get(SettingEnum.BASE_SETTING.name()));
+    }
+    public static class Solution {
+        public static boolean containsDuplicate(int[] nums) {
+            Set<Integer> data = new HashSet<Integer>();
+            for(int i=0;i < nums.length;i++){
+                if(data.contains(nums[i])){
+                    return true;
+                }
+                data.add(nums[i]);
+            }
+            return false;
+        }
+    }
+    public static void main(String[] args) {
+        int[] a = new int[]{1,2,3,1};
+        boolean data = Solution.containsDuplicate(a);
+        System.out.println(data);
     }
 }

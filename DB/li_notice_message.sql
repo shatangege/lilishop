@@ -1,10 +1,10 @@
 /*
  Navicat MySQL Data Transfer
 
- Source Server         : 192.168.0.116
+ Source Server         : 192.168.0.200
  Source Server Type    : MySQL
  Source Server Version : 80023
- Source Host           : 192.168.0.116:3306
+ Source Host           : 192.168.0.200:3306
  Source Schema         : lilishop
 
 
